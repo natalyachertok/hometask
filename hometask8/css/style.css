@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+.greeting, .conclusion {
+    background-color: #391f69;
+    color: #edeaea;
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 5px 0 5px 0;
+    height: 4.5vh;
+}
+
+.greeting, .conclusion, .title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu {
+    background-color: #d9d5de;
+    float: left;
+}
+
+.menu-title {
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+li {
+    margin: 2px 20px 2px 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    }
+    a:hover{
+    color: #391f69;
+    font-weight: bold;
+    transition-duration: 1s;}
+.menu, .content {
+    font-family: Calibri, sans-serif;
+    height: 88vh;
+}
+
+.content {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.title, .menu-title {
+    font-weight: bold;
+
+}
+
+.title {
+    font-size: 24px;
+    padding-top: 10px;
+    color: #391f69;
+}
+
+img {
+    float: left;
+    margin: 15px 30px 15px 15px;
+}
+
+.info {
+    margin-right: 15px;
+    padding-left: 225px;
+}
+
+.conclusion::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media screen and (max-width: 565px) {
+    .greeting, .conclusion {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .greeting, .conclusion {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .menu {
+        float: none;
+        padding-top: 1px;
+        height: 38vh;
+        background-color: #ffffff;
+    }
+.menu-title{
+color: #391f69;
+text-align: center;}
+    .content {
+        height: 68vh;
+    }
+
+    img {
+        display: none;
+    }
+
+    .info {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .greeting, .conclusion {
+        height: 7vh;
+    }
+}
