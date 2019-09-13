@@ -3,9 +3,9 @@ body {
 }
 
 .greeting, .conclusion {
+    font-size: 23px;
     background-color: #391f69;
     color: #edeaea;
-    font-size: 30px;
     font-family: 'Fira Sans', sans-serif;
     padding: 5px 0 5px 0;
 }
@@ -19,16 +19,20 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    flex-direction: column;
 }
 
 .menu {
-    background-color: #5a595b;
+    padding-top: 1px;
+    height: 40vh;
+    background-color: #ffffff;
+    font-family: Calibri, sans-serif;
 }
 
 .menu-title {
+    color: #391f69;
+    text-align: center;
     font-size: 18px;
-    margin: 5px 0 5px 0;
-    color: #FFFFFF;
 }
 
 li {
@@ -36,19 +40,15 @@ li {
     list-style: none;
 }
 
-.menu, .content {
-    font-family: Calibri, sans-serif;
-    height: 88vh;
+.title, .menu-title {
+    font-weight: bold;
 }
 
 .content {
+    height: 82vh;
+    font-family: Calibri, sans-serif;
     background-color: #ffffff;
     width: 100%;
-}
-
-.title, .menu-title {
-    font-weight: bold;
-
 }
 
 .title {
@@ -58,56 +58,55 @@ li {
 }
 
 img {
-    float: left;
-    margin: 15px 30px 15px 15px;
+    display: none;
 }
 
 .info {
     margin: 15px;
 }
 
-.conclusion::after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
-@media screen and (max-width: 565px) {
+@media screen and (min-width: 480px) {
     .greeting, .conclusion {
         font-size: 26px;
     }
 
+    .container {
+        flex-direction: row;
+    }
+
     img {
+        display: block;
+        float: left;
+        margin: 15px 30px 15px 15px;
         width: 40%;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .greeting, .conclusion {
-        font-size: 23px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .menu {
-        padding-top: 1px;
-        height: 40vh;
-        background-color: #ffffff;
+    .menu, .content {
+        height: 88vh;
     }
 
     .menu-title {
-        color: #391f69;
-        text-align: center;
+        margin: 5px 0 5px 0;
+        color: #FFFFFF;
     }
 
-    .content {
-        height: 82vh;
+    .menu {
+        background-color: #5a595b;
     }
 
-    img {
-        display: none;
+    .conclusion::after {
+        content: '';
+        clear: both;
+        display: block;
     }
 }
+
+@media screen and (min-width: 565px) {
+    .greeting, .conclusion {
+        font-size: 30px;
+    }
+    
+}
+
+
 
