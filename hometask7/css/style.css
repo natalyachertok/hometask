@@ -1,22 +1,82 @@
 * {
-    background-image: url("../images/full-bloom.png");
+    background-image: url("../images/dynamic-style.png");
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Marmelad', sans-serif;
+    margin-left: 105px;
+    font-size: 28px;
+}
+
+pre {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.hidden {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+h1, .hidden {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+h1, h2, .hidden {
+    color: #563030;
 }
 
 .contacts {
-    background: #f3f2f2;
-    width: 400px;
-    height: 300px;
+    width: 340px;
+    height: 220px;
     position: fixed;
-    right: 0;
-    top: 0;
-    margin: 30px 30px 0 0;
+    right: 30px;
+    top: 30px;
+    overflow: hidden;
+    transition: all 0.7s;
 }
-.image-link{
-display: block;
-height: 105px;
-width: 108px;
-background: url("../images/social-networks.jpg") 0 0 no-repeat;
+
+.contacts, .hidden {
+    background: #f9f5e9;
 }
-.skype{
-background-position: -643px -86px;
+
+.contacts:hover {
+    height: 300px;
+}
+
+.image-link {
+    display: inline-block;
+    height: 93px;
+    width: 93px;
+    background: url("../images/social-networks.png") 0 0 no-repeat;
+    margin: 6px 8px 6px 8px;
+}
+
+.skype {
+    background-position: -367px -365px;
+}
+
+.viber {
+    background-position: 0px -365px;
+}
+
+.telegram {
+    background-position: -244px -365px;
+}
+
+.gmail {
+    background-position: -488px 0px;
+}
+
+.vk {
+    background-position: -122px 0px;
+}
+
+.inst {
+    background-position: -607px 0px;
 }
