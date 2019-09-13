@@ -29,14 +29,18 @@ body {
 li {
     margin: 2px 20px 2px 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000000;
-    }
-    a:hover{
+}
+
+a:hover {
     color: #391f69;
     font-weight: bold;
-    transition-duration: 1s;}
+    transition-duration: 1s;
+}
+
 .menu, .content {
     font-family: Calibri, sans-serif;
     height: 88vh;
@@ -100,9 +104,12 @@ img {
         height: 38vh;
         background-color: #ffffff;
     }
-.menu-title{
-color: #391f69;
-text-align: center;}
+
+    .menu-title {
+        color: #391f69;
+        text-align: center;
+    }
+
     .content {
         height: 68vh;
     }
