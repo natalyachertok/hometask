@@ -1,0 +1,45 @@
+* {
+    background-image: url("../images/background.jpg");
+}
+
+h1 {
+    font-family: "Monotype Corsiva", "Segoe UI Historic", sans-serif;
+    text-align: center;
+    color: #8b0000;
+    font-size: 50px;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+.image-1 {
+    width: 400px;
+    height: 500px;
+}
+
+.image, footer {
+    text-align: center;
+}
+
+.introduction {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 60px 15px 60px;
+}
+
+h2 {
+    color: #8b0000;
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 22px;
+}
+p, ul, ol, .conclusion{
+    font-size: 18px;
+}
+.ingridients, .steps, .conclusion, a{
+    margin: 10px 30px 10px 30px;
+}

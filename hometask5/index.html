@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма заказа пиццы</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<h2>Заказ пиццы</h2>
+<form action="http://fe.it-academy.by/TestForm.php" autocomplete="off" method="POST">
+  <fieldset>
+    <legend>Данные для авторизации:</legend>
+    <div class="user-name">
+     Имя пользователя:
+    <input type="text"
+           name="login"
+           pattern="[a-zA-Z]{,12}"
+           maxlength="12"
+           title="Имя пользователя ограчиено 12 символами английского алфавита"
+           autofocus
+           required/>
+    </div><br/>
+    <div class="password">
+    Пароль:
+    <input type="text"
+           name="pswd"
+           pattern="[a-zA-Z0-9]{7}"
+           title="Пароль должен состоять из 7 символов английского алфавита и/или цифр"
+           required>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Контактные данные:</legend>
+    <div class="telephone">
+    телефон:
+    <input type="tel"
+           name="phone"
+           placeholder="+375-(XX)-XXX-XX-XX"
+           required/>
+    </div><br/>
+    <div class="email">
+    e-mail:
+    <input type="email"
+    name="mail"
+    title="Адрес электронной почты должен содержать символ '@' "
+    required/>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Пожелания к заказу</legend>
+    <div class="sauce">
+    Выберите соус, если он необходим:<br/>
+    <input type="checkbox"
+           id="ketchup"
+           name="sauce-1"
+           value="Ketchup"/><label for="ketchup">Кетчуп</label>
+    <input type="checkbox"
+           id="mayonnaise"
+           name="sauce-2"
+           value="Mayonnaise"/><label for="mayonnaise">Майонез</label>
+    <input type="checkbox"
+           id="mushroom"
+           name="sauce-3"
+           value="Mushroom"/><label for="mushroom">Грибной</label><br/>
+    <input type="checkbox"
+           id="cheese"
+           name="sauce-4"
+           value="Cheese"/><label for="cheese">Сырный</label>
+    <input type="checkbox"
+           id="bbq"
+           name="sauce-5"
+           value="BBQ"/><label for="bbq">Барбекю</label>
+    <input type="checkbox"
+           id="garlic"
+           name="sauce-6"
+           value="Garlic"/><label for="garlic">Чесночный</label>
+    </div>
+    <div class="delivery">
+    Нужна ли Вам доставка на дом?
+    <input type="radio" checked name="delivery" value="1"/>Да
+    <input type="radio" name="delivery" value="2"/>Нет
+    </div>
+    <div class="payment">
+    Выберите способ оплаты:
+    <select name="pay">
+      <option value="1">Наличные</option>
+      <option value="2">Банковская карта</option>
+    </select>
+    </div>
+    <div class="comment">
+    Комментарий к заказу:<br/>
+    <textarea cols="40" rows="7" name="comment"></textarea>
+    </div>
+  </fieldset>
+  <input class="submit" type="submit"/>
+  <input class="reset" type="reset" value="Сброс данных"/>
+</form>
+</body>
+</html>

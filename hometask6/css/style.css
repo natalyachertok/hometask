@@ -1,0 +1,21 @@
+* {
+    text-align: center;
+    background-color: #efddae;
+}
+
+.title {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+.font-1 {
+    font-family: 'Alegreya', serif;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+}
+
+.font-2 {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+}

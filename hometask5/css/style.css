@@ -1,0 +1,52 @@
+* {
+    font-family: "Roboto Light", "Segoe UI Historic", sans-serif;
+}
+
+h2 {
+    margin-left: 50px;
+    font-size: 30px;
+    color: #1e28a7;
+}
+
+form {
+    width: 40%;
+    margin-left: 50px;
+    border: 3px solid #0f188b;
+    font-size: 14px;
+    color: #04072c;
+}
+
+fieldset {
+    margin: 5px 5px 5px 5px;
+    border: 2px solid #0f188b;
+
+}
+
+legend {
+    font-size: 18px;
+    color: #0f188b;
+}
+
+.submit, .reset {
+    margin: 5px 5px 5px 5px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    background-color: #0f188b;
+    color: #ffffff;
+    height: 30px;
+    width: 115px;
+    border: none;
+}
+
+.submit:hover {
+    opacity: 0.9;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+    transition-duration: 0.5s;
+}
+
+.reset:hover {
+    opacity: 0.9;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+    transition-duration: 0.5s;
+}

@@ -1,0 +1,44 @@
+* {
+    background-image: url("../images/background.jpg");
+}
+
+h1 {
+    font-family: "Monotype Corsiva", "Segoe UI Historic", sans-serif;
+    text-align: center;
+    color: #8b0000;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Monotype Corsiva", "Segoe UI Historic", sans-serif;
+    color: #8b0000;
+    font-size: 36px;
+}
+
+.title {
+    text-decoration: none;
+}
+
+.title:hover {
+    text-decoration: underline;
+    color: #8b0000;
+
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.cake {
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+.description, .read-more {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+}
