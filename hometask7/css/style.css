@@ -12,11 +12,11 @@
     margin: 30px 30px 0 0;
 }
 .image-link{
-display: inline-block;
-height: 50px;
-width: 50px;
-background: url("../images/social-networks.png") 0 0 no-repeat;
+display: block;
+height: 105px;
+width: 108px;
+background: url("../images/social-networks.jpg") 0 0 no-repeat;
 }
 .skype{
-background-position: left top;
+background-position: -643px -86px;
 }
